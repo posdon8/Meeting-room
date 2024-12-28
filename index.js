@@ -24,7 +24,7 @@ const server = http.createServer(app);
 // Cấu hình CORS cho phép frontend từ cổng 5500
 const io = socketIo(server, {
     cors: {
-        origin: ["https://project-i-54t6.onrender.com"], // Frontend đang chạy trên cổng này
+        origin: ["https://meeting-room-c0sj.onrender.com"], // Frontend đang chạy trên cổng này
         methods: ["GET", "POST"]
     }
 });
