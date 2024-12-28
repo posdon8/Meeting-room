@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3001');
+const socket = io('https://meeting-room-c0sj.onrender.com');
 let localStream;
 let videoTrack; 
 let audioTrack;
