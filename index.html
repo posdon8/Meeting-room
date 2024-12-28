@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meeting Room</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+        
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+    </head>
+    <body>
+        <div id="banner" class="banner">
+            <h1>Welcome to Posdon.t</h1>
+            <p>Contact everyone and love them! <i class="fas fa-heart"></i></p>
+            <div id="datetime">...</div>
+            
+        </div>
+        <div id="app" class="app">
+          <div id="home" class="home">  
+          <img id="img1" src="/images/camera-removebg-preview.png" alt="cam">
+            <h1>Meeting Room</h1>
+            <input type="text" id="txtUsername" placeholder="Enter your name">
+            <button id="btnSignUp"> Sign Up</button>
+            </div>
+            </div>
+            <div id="room" class="meet-room">
+              <h3 id="my-peer"> Your room: </h3>
+               <ul id="userList"></ul>
+               <video id="localStream" width="300"></video>
+               
+               <br /><br />
+               <video id="remoteStream" width="300" ></video> 
+               <br/>
+                <button id="btnToggleMic">Toggle Mic</button>
+                <button id="btnToggleCamera">Toggle Camera</button>
+                <input type="text" id="remoteId" placeholder="Join by ID">
+               <button id="btnCall"> Join </button>
+               <div id="chatBox">
+                <input id="chatMessage" type="text" placeholder="Nhập tin nhắn..." style="width: 40%;" />
+                <button id="sendMessage">Gửi</button>
+                <div id="messages" style="border: 1px solid #ccc; height: 300px; overflow-y: scroll; padding: 5px;">
+                    <!-- Tin nhắn sẽ hiển thị ở đây -->
+                </div>
+                
+            </div>
+            
+               <br /><br />
+             </div>
+         
+        
+    </body>
+    <script src="main.js"></script>
+</html>

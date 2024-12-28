@@ -1,0 +1,105 @@
+body {
+    display: grid;
+    place-items: center;
+  font-family: Arial, sans-serif;
+    text-align: center;
+  }
+#img1 {
+    width: 150px;
+    height: 150px;
+   
+}
+#datetime {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  top: 10px;
+  right: 10px;
+  position: fixed;
+}
+.banner{
+
+    color:black;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: large;
+}
+.home {
+    margin-top: 30px;
+    background-color: rgb(59, 59, 249);
+    width: 400px;
+   
+    align-items: center;  
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)  ;
+    border-radius: 10px;
+    color: rgb(253, 253, 253);
+}
+  
+#icon {
+    size: 40px;
+}
+
+#room{
+  display: none;
+  background-color: #eeeded;
+  padding: 20px;
+  margin-top: 10px;
+  width: 60%;
+}
+#chatBox{
+  display: none;
+}
+input {
+  background-color: rgb(255, 255, 255);
+  border-radius:  10px;
+  height: 35px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  font-size: medium;
+}  
+#btnSignUp{
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+#btnSignUp:hover {
+  background-color:rgb(250, 147, 147); /* Màu khi hover */
+}
+.home {
+  display: flex;
+}
+.meet-room{
+  display: block;
+}
+.meet-room button{
+  width: 60px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.meet-room button:hover{
+  background-color:rgb(250, 147, 147) ;
+}
+#btnToggleCamera{
+  width: 70px;
+}
+#remoteId{
+  margin-left: 50px;
+}
+video{
+  border-radius: 20px;
+}
+#chatBox{
+  margin-top: 20px;
+}
